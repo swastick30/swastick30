@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose Me</title>
+    <style>
+        body {
+            background-color: #FF69B4; /* Heart pink background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .popup {
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 300px;
+        }
+        .popup h1 {
+            color: black;
+            margin-bottom: 20px;
+        }
+        .popup p {
+            color: black;
+            margin-bottom: 20px;
+        }
+        .popup button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .popup button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h1>❤ Please Note ❤</h1>
+        <p>What you're about to see is very serious, so take it seriously.</p>
+        <button onclick="showMessage()">Okay, Got It!</button>
+    </div>
+    <div class="main-content" style="display: none;">
+        <h1>Propose Me</h1>
+        <p>With a bunch of roses, and I'll be yours.</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.querySelector('.popup').style.display = 'none';
+            document.querySelector('.main-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
